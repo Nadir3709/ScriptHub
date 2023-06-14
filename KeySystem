@@ -1,3 +1,6 @@
+-- OPEN SOURCE
+-- NADIR HUB LOADING
+
 if game.CoreGui:FindFirstChild('Loading Screen') then
 	game.CoreGui:FindFirstChild('Loading Screen'):Destroy()
 	destroyed = true
