@@ -1,1 +1,178 @@
-loadstring("\112\99\97\108\108\40\102\117\110\99\116\105\111\110\40\41\10\32\32\32\32\114\101\112\101\97\116\32\119\97\105\116\40\41\32\117\110\116\105\108\32\103\97\109\101\58\73\115\76\111\97\100\101\100\40\41\10\32\32\32\32\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\78\97\100\105\114\51\55\48\57\47\75\101\121\45\83\121\115\116\101\109\45\45\47\109\97\105\110\47\75\101\121\83\121\115\116\101\109\109\34\41\41\40\41\10\101\110\100\41\10")()
+if game.CoreGui:FindFirstChild('Loading Screen') then
+	game.CoreGui:FindFirstChild('Loading Screen'):Destroy()
+	destroyed = true
+end
+
+local LoadingScreen = Instance.new("ScreenGui")
+local LoadingFrame = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Inside = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local Loading = Instance.new("TextLabel")
+
+LoadingScreen.Name = "Loading Screen"
+LoadingScreen.Parent = game.CoreGui
+LoadingScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+LoadingFrame.Name = "Loading Frame"
+LoadingFrame.Parent = LoadingScreen
+LoadingFrame.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+LoadingFrame.BorderColor3 = Color3.fromRGB(36, 36, 36)
+LoadingFrame.BorderSizePixel = 0
+LoadingFrame.Position = UDim2.new(0.362993687, 0, 0.392810196, 0)
+LoadingFrame.Size = UDim2.new(0.272977948, 0, 0.212698415, 0)
+
+Bar.Name = "Bar"
+Bar.Parent = LoadingFrame
+Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bar.Position = UDim2.new(0.0235690232, 0, 0.522388101, 0)
+Bar.Size = UDim2.new(0.956228971, 0, 0.164179102, 0)
+
+UICorner.Parent = Bar
+
+Inside.Name = "Inside"
+Inside.Parent = Bar
+Inside.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+Inside.BorderColor3 = Color3.fromRGB(0, 255, 127)
+Inside.Size = UDim2.new(0, 0, 1, 0)
+
+UICorner_2.Parent = Inside
+
+UICorner_3.Parent = LoadingFrame
+
+Loading.Name = "Loading"
+Loading.Parent = LoadingScreen
+Loading.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Loading.BorderColor3 = Color3.fromRGB(36, 36, 36)
+Loading.BorderSizePixel = 0
+Loading.Position = UDim2.new(0.370339006, 0, 0.439230382, 0)
+Loading.Size = UDim2.new(0.260110289, 0, 0.052380953, 0)
+Loading.Font = Enum.Font.SourceSans
+Loading.Text = "Loading Script"
+Loading.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loading.TextScaled = true
+Loading.TextSize = 14.000
+Loading.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Loading.TextWrapped = true
+
+-- Scripts:
+
+local function BJKNA_fake_script() -- LoadingFrame.Script Hub 
+	local script = Instance.new('LocalScript', LoadingFrame)
+
+	wait(12)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Key-System--/main/System"))()
+end
+coroutine.wrap(BJKNA_fake_script)()
+local function KQODG_fake_script() -- LoadingFrame.Visible 
+	local script = Instance.new('LocalScript', LoadingFrame)
+
+	wait(12)
+	script.Parent.Visible=false
+end
+coroutine.wrap(KQODG_fake_script)()
+local function RTFHAP_fake_script() -- Inside.LocalScript 
+	local script = Instance.new('LocalScript', Inside)
+
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",12)
+end
+coroutine.wrap(RTFHAP_fake_script)()
+local function RFISZPF_fake_script() -- Loading.Loading Text 
+	local script = Instance.new('LocalScript', Loading)
+
+	script.Parent.Text = "Checking Game" -- 1
+	wait(0.5)
+	script.Parent.Text = "Checking Game." -- 2
+	wait(0.5)
+	script.Parent.Text = "Checking Game.." -- 3
+	wait(0.5)
+	script.Parent.Text = "Checking Game..." -- 4
+	wait(0.5)
+	script.Parent.Text = "Checking Game." -- 5
+	wait(0.5)
+	script.Parent.Text = "Checking Game.." -- 6
+	wait(0.5)
+	script.Parent.Text = "Checking Game..." -- 7
+	wait(0.5)
+	script.Parent.Text = "Checking Game." -- 8
+	wait(0.5)
+	script.Parent.Text = "Checking Game.." -- 9
+	wait(0.5)
+	script.Parent.Text = "Checking Game..." -- 10
+	wait(0.5)
+	script.Parent.Text = "Checking Game..." -- 11
+	wait(0.5)
+	local PlaceId = game.PlaceId
+	
+	if PlaceId == 4246487209 or PlaceId == 4246487209 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 4104106043 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 3623096087 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 7993293100 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 855499080  then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 2248408710 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 1962086868 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 3582763398 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 4954752502 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 7211666966 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 621129760 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 5256165620 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 13822889 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 537413528 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 286090429 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 8015075184 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 3101667897 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 9737608002 then
+		script.Parent.Text = "Game Support!"
+	else
+		game.Players.LocalPlayer:kick("Game Not Support!")
+	end -- 12
+	wait(1)
+	script.Parent.Text = "Game Support!"
+	wait(0.5)
+	script.Parent.Text = "Loading Key System."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System.."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System..."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System.."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System..."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System.."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System..."
+	wait(0.5)
+	script.Parent.Text = "Loading Key System..."
+end
+coroutine.wrap(RFISZPF_fake_script)()
+local function VQFJCO_fake_script() -- Loading.Visible 
+	local script = Instance.new('LocalScript', Loading)
+
+	wait(12)
+	script.Parent.Visible=false
+end
+coroutine.wrap(VQFJCO_fake_script)()
