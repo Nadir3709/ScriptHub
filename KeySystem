@@ -167,6 +167,10 @@ local function RFISZPF_fake_script() -- Loading.Loading Text
 		script.Parent.Text = "Game Support!"
 	elseif PlaceId == 9737608002 then
 		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 3233996272 then
+		script.Parent.Text = "Game Support!"
+	elseif PlaceId == 3276265788 then
+		script.Parent.Text = "Game Support!"
 	else
 		game.Players.LocalPlayer:kick("Game Not Support!")
 	end -- 12
