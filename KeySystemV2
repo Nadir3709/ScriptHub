@@ -1,2 +1,0 @@
-setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/ScriptHub/main/KeySystem"))()")
-game.Players.LocalPlayer:kick("New script copied to clipboard")
