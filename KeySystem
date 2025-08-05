@@ -1,12 +1,2 @@
---[[
-  _   _                         _         _    _                        ___  
- | \ | |                       (_)       | |  | |                      |__ \ 
- |  \| | __ _  __ _ _ __   __ _ _ _ __   | |__| | __ _ _   _  ___   ___   ) |
- | . ` |/ _` |/ _` | '_ \ / _` | | '_ \  |  __  |/ _` | | | |/ _ \ / _ \ / / 
- | |\  | (_| | (_| | |_) | (_| | | | | | | |  | | (_| | |_| | (_) | (_) |_|  
- |_| \_|\__, |\__,_| .__/ \__,_|_|_| |_| |_|  |_|\__,_|\__, |\___/ \___/(_)  
-         __/ |     | |                                  __/ |                
-        |___/      |_|                                 |___/                 
---]]
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/ScriptHub/main/Loader"))()
+game.Players.LocalPlayer:kick("Outdate Version\nNew Script Copied to Clipboard.")
+setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/Skedzz/ScriptHub/main/Loader"))()")
